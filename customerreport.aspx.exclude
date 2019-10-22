@@ -1,0 +1,57 @@
+<%@ Page Language="C#" AutoEventWireup="true" Codefile="customerreport.aspx.cs" Inherits="Report8" %>
+
+<%@ Register Assembly="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+    Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+  <link rel ="Stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+     <table align="center">
+    <tr>
+    <td>
+    <div id="header" style="text-align: center; position: static; height: 176px;">
+        &nbsp;    
+    <div id="two" style="z-index: 100; left: 288px; width: 125px; position: absolute; top: 48px; height: 109px">
+    </div>
+    <div id="three" style="z-index: 101; left: 432px; position: absolute; top: 48px; height: 112px">
+    </div>
+    <div id="four" style="z-index: 102; left: 592px; width: 116px; position: absolute; top: 48px; height: 110px">
+    </div>
+    </div>
+    </td>
+    <td>
+      <div id="f" style="text-align: center; position: static; top:1000px">
+      </div>
+    </td>
+    </tr>
+    </table>
+    <div>
+        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Panel ID="Panel1" runat="server" BackColor="#C0FFFF" Height="272px" Style="z-index: 100;
+            left: 10px; position: absolute; top: 236px" Width="288px">
+            &nbsp;
+            <asp:LinkButton ID="LinkButton1" runat="server" BackColor="#C0C0FF" OnClick="LinkButton1_Click"
+                Style="z-index: 102; left: 24px; position: absolute; top: 112px" Width="248px">Customer Relationship Management</asp:LinkButton>
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server" BackColor="SkyBlue" Font-Bold="True" Height="50px"
+            Style="z-index: 102; left: 12px; position: absolute; top: 255px" Width="288px">
+            &nbsp; &nbsp;
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CUSTOMER REPORT</asp:Panel>
+        &nbsp;
+    
+    </div>
+    <iframe id = "frm" runat = "server" style="z-index: 102; left: 324px; width: 600px; position: absolute; top: 225px; height: 564px" >
+        <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+
+    </iframe>
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+    </form>
+</body>
+</html>

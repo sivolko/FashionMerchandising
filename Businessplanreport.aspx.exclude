@@ -1,0 +1,49 @@
+<%@ Page Language="C#" AutoEventWireup="true" Codefile="Businessplanreport.aspx.cs" Inherits="Report9" %>
+
+<%@ Register Assembly="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+    Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel ="Stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server" >
+     <table align="center">
+    <tr>
+    <td>
+    <div id="header" style="text-align: center; position: static; height: 176px;">
+        &nbsp;    
+    <div id="two" style="z-index: 105; left: 288px; width: 125px; position: absolute; top: 48px; height: 109px">
+    </div>
+    <div id="three" style="z-index: 106; left: 432px; position: absolute; top: 48px; height: 112px">
+    </div>
+    <div id="four" style="z-index: 107; left: 592px; width: 116px; position: absolute; top: 48px; height: 110px">
+    </div>
+    </div>
+    </td>
+    <td>
+      <div id="f" style="text-align: center; position: static; top:1000px">
+      </div>
+    </td>
+    </tr>
+    </table>
+    <div style="background-color:White ">
+       <asp:Label style="Z-INDEX: 100; LEFT: 129px; POSITION: absolute; TOP: 249px" id="Label1" runat="server" Text="Business id" BackColor="White"></asp:Label><asp:DropDownList style="Z-INDEX: 101; LEFT: 226px; POSITION: absolute; TOP: 246px" id="DropDownList1" runat="server" Width="96px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
+        </asp:DropDownList><asp:Button style="Z-INDEX: 102; LEFT: 361px; POSITION: absolute; TOP: 246px" id="Button2" onclick="Button2_Click" runat="server" Text="view all"></asp:Button><asp:GridView style="Z-INDEX: 103; LEFT: 193px; POSITION: absolute; TOP: 314px" id="GridView1" runat="server" CellSpacing="2" CellPadding="3" BorderWidth="1px" BorderStyle="None" BorderColor="#DEBA84" BackColor="#DEBA84">
+            <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510"  />
+            <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510"  />
+            <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White"  />
+            <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center"  />
+            <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White"  />
+        </asp:GridView>
+        <asp:LinkButton ID="LinkButton1" runat="server" BackColor="White" OnClick="LinkButton1_Click"
+            Style="z-index: 108; left: 508px; position: absolute; top: 459px" Width="41px">Back</asp:LinkButton>
+    
+    </div>
+    </form>
+</body>
+</html>
